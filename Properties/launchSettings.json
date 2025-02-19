@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "session3 LinQ": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
