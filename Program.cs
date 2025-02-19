@@ -121,17 +121,15 @@ namespace session3_LinQ
             //}
             #endregion
             #region 3
-            //String[] Arr = { "from", "salt", "earn", " last", "near", "form" };
-            //var result = Arr.GroupBy(arr => arr.Contains(""));
+            string[] Arr = { "from", "salt", "earn", " last", "near", "form" };
 
-            //foreach (var grpup in result)
-            //{
-            //    Console.WriteLine($" number with a remainder of :{grpup.Key} ");
-            //    foreach (var grpup2 in grpup)
-            //    {
-            //        Console.WriteLine(grpup2);
-            //    }
-            //}
+            var result = Arr.GroupBy(a => a, new campare());
+
+
+            foreach (var group in result)
+            {
+                Console.WriteLine($"Group: {string.Join(", ", group)}");
+            }
             #endregion
             #endregion
 
